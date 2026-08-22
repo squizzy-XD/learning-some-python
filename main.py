@@ -1,18 +1,13 @@
-#validating input exercise
-#username no more than 13 characters
-#no spaces
-#no digits
+#string indexing
+# [start:end:step]
 
-username = input("Enter a username: ")
+credit_number = "1234-5678-9012-3456"
 
-
-username.find(" ")
-
-if len(username) > 12:
-    print("Your username cant be more than 12 characters")
-elif not username.find(" ") == -1:
-    print("Your username cant contain spaces.")
-elif not username.isalpha():
-    print("Your username cant contain numbers.")
-else:
-    print(f"welcome {username}")
+credit_number = credit_number[::-1]
+print(credit_number})
+# print(credit_number[0])
+# print(credit_number[0:4])
+# print(credit_number[5:9])
+# print(credit_number[5:])
+# print(credit_number[-1])
+# print(credit_number[::2])
