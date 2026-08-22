@@ -1,25 +1,16 @@
-#logical operators
-#       OR = at least one condition must be true
-#       AND = both conditions must be true
-#       NOT = inverts the conditions (not false, not true)
 
-temp = 25
-is_sunny = False
-if temp >= 28 and is_sunny:
-    print("It is hot outside.")
-    print("It is sunny.")
-elif temp <= 0 and is_sunny:
-    print("It is COLD outside.")
-    print("It is sunny.")
-elif 28 > temp > 0 and is_sunny:
-    print("It is WARM outside.")
-    print("It is sunny.")
-elif temp >= 28 and not is_sunny:
-        print("It is hot outside.")
-        print("It is cloudy.")
-elif temp <= 0 and not is_sunny:
-        print("It is COLD outside.")
-        print("It is cloudy.")
-elif 28 > temp > 0 and not is_sunny:
-        print("It is WARM outside.")
-        print("It is cloudy.")
+#name = input("Enter your full name: ")
+phone_number = input("Enter your phone #: ")
+
+#result = len(name)
+#result = name.find(" ")
+#result = name.rfind("i")
+#name = name.capitalize()
+#name = name.upper()
+#name = name.lower()
+#result = name.isdigit()
+#result = name.isalpha()
+#result = phone_number.count("-")
+phone_number = phone_number.replace("-"," ")
+
+print(phone_number)
