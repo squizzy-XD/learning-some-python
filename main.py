@@ -1,14 +1,12 @@
-#weight converter
 
-weight = float(input("Enter your weight: "))
-unit = input("Kilograms or Pounds? (K or L): ")
-if unit == "K":
-    weight = weight * 2.205
-    unit = "lbs."
-    print(f"Your weight is {round(weight), 1} {unit}")
-elif unit == "L":
-    weight = weight / 2.205
-    unit = "kgs."
-    print(f"Your weight is {round(weight), 1} {unit}")
+unit = input("Is this temperature in Celsius or Fahrenheit (C/F): ")
+temp = float(input("Enter the temperature: "))
+
+if unit == "C":
+    temp = round((9 * temp) / 5 + 32, 1)
+    print(f"The temp in F is: {temp}F")
+elif unit == "F":
+    temp = round((temp - 32) * 5 / 9, 1)
+    print(f"The temp in C is: {temp}C")
 else:
-    print(f"{unit} is not a valid unit!")
+    print(f"{unit} is an invalid unit of measurement")
