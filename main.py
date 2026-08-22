@@ -1,12 +1,25 @@
+#logical operators
+#       OR = at least one condition must be true
+#       AND = both conditions must be true
+#       NOT = inverts the conditions (not false, not true)
 
-unit = input("Is this temperature in Celsius or Fahrenheit (C/F): ")
-temp = float(input("Enter the temperature: "))
-
-if unit == "C":
-    temp = round((9 * temp) / 5 + 32, 1)
-    print(f"The temp in F is: {temp}F")
-elif unit == "F":
-    temp = round((temp - 32) * 5 / 9, 1)
-    print(f"The temp in C is: {temp}C")
-else:
-    print(f"{unit} is an invalid unit of measurement")
+temp = 25
+is_sunny = False
+if temp >= 28 and is_sunny:
+    print("It is hot outside.")
+    print("It is sunny.")
+elif temp <= 0 and is_sunny:
+    print("It is COLD outside.")
+    print("It is sunny.")
+elif 28 > temp > 0 and is_sunny:
+    print("It is WARM outside.")
+    print("It is sunny.")
+elif temp >= 28 and not is_sunny:
+        print("It is hot outside.")
+        print("It is cloudy.")
+elif temp <= 0 and not is_sunny:
+        print("It is COLD outside.")
+        print("It is cloudy.")
+elif 28 > temp > 0 and not is_sunny:
+        print("It is WARM outside.")
+        print("It is cloudy.")
