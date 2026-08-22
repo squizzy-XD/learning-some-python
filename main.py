@@ -1,16 +1,18 @@
+#validating input exercise
+#username no more than 13 characters
+#no spaces
+#no digits
 
-#name = input("Enter your full name: ")
-phone_number = input("Enter your phone #: ")
+username = input("Enter a username: ")
 
-#result = len(name)
-#result = name.find(" ")
-#result = name.rfind("i")
-#name = name.capitalize()
-#name = name.upper()
-#name = name.lower()
-#result = name.isdigit()
-#result = name.isalpha()
-#result = phone_number.count("-")
-phone_number = phone_number.replace("-"," ")
 
-print(phone_number)
+username.find(" ")
+
+if len(username) > 12:
+    print("Your username cant be more than 12 characters")
+elif not username.find(" ") == -1:
+    print("Your username cant contain spaces.")
+elif not username.isalpha():
+    print("Your username cant contain numbers.")
+else:
+    print(f"welcome {username}")
