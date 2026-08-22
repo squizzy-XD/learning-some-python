@@ -1,9 +1,7 @@
-#typecasting
+#input exercise rectangle area calc
 
-name = "squizzy"
-age = 15
-gpa = 3.2
-is_student = True
+length = float(input("enter the length: "))
+width = float(input("enter the width: "))
+area = length * width
 
-name = bool(name)
-print(name)
+print(f"The area is: {area}cm^2")
