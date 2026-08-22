@@ -1,13 +1,19 @@
-# if = Only do IF condition is true
-#       else = do something else
+#python calculator
 
-age = int(input("Enter your age: "))
-
-if age >= 100:
-    print("too old to sign up")
-elif age >= 18:
-    print("You are now signed up!")
-elif age < 0:
-    print("die lol")
+operator = input("Enter an operator (+ - * /): ")
+num1 = float(input("enter number 1: "))
+num2 = float(input("enter number 2: "))
+if operator == "+":
+    result = num1 + num2
+    print(round(result, 3))
+elif operator == "-":
+    result = num1 - num2
+    print(round(result, 3))
+elif operator == "*":
+    result = num1 * num2
+    print(round(result, 3))
+elif operator == "/":
+    result = num1 / num2
+    print(round(result, 3))
 else:
-    print("You are not old enough to sign up!")
+    print(f"{operator} is not a valid operator!")
