@@ -1,6 +1,13 @@
-import math
+# if = Only do IF condition is true
+#       else = do something else
 
-radius = float(input("Enter the radius of a circle"))
+age = int(input("Enter your age: "))
 
-circumference = 2 * math.pi * radius
-print(f"The circumference is {round(circumference, 2)}")
+if age >= 100:
+    print("too old to sign up")
+elif age >= 18:
+    print("You are now signed up!")
+elif age < 0:
+    print("die lol")
+else:
+    print("You are not old enough to sign up!")
