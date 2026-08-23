@@ -1,13 +1,8 @@
-#string indexing
-# [start:end:step]
+#while loop = execute code WHILE some condition remains true
 
-credit_number = "1234-5678-9012-3456"
+num = int(input("enter a number between 1 and 10: "))
 
-credit_number = credit_number[::-1]
-print(credit_number})
-# print(credit_number[0])
-# print(credit_number[0:4])
-# print(credit_number[5:9])
-# print(credit_number[5:])
-# print(credit_number[-1])
-# print(credit_number[::2])
+while num < 1 or num > 10:
+    print(f"{num} is not valid")
+    num = int(input("enter a number between 1 and 10: "))
+print(f"your number is {num}")
